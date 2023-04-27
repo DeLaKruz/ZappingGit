@@ -12,8 +12,25 @@ class Tests {
         int canaldedestino = 0;
         int clics = 0;
 
+        // Act
         int clicsObtenidos = Main.cambioDeCanalOptimo(canaldeorigen, canaldedestino);
 
+        // Assert
         assertEquals(clics, clicsObtenidos);
     }
+    @Test
+    public void testCambioDeCanalDe1a2() {
+        // Arrange
+        int canaldeorigen = 1;
+        int canaldedestino = 2;
+        int clics = 1;
+
+        // Act
+        int clicsObtenidos = Main.cambioDeCanalOptimo(canaldeorigen, canaldedestino);
+
+        // Assert
+        assertEquals(clics, clicsObtenidos);
+    }
+
+
 }
