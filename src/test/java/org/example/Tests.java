@@ -88,4 +88,20 @@ class Tests {
         // Assert
         assertEquals(clics, clicsObtenidos);
     }
+
+    @Test
+    public void testCambioDeCanalDe1a51() {
+        // Arrange
+        int canaldeorigen = 1;
+        int canaldedestino = 51;
+        int clics = 49;
+
+        // Act
+        int clicsObtenidos = Main.cambioDeCanalOptimo(canaldeorigen, canaldedestino);
+
+        // Assert
+        assertEquals(clics, clicsObtenidos);
+    }
+
+
 }
