@@ -18,6 +18,7 @@ class Tests {
         // Assert
         assertEquals(clics, clicsObtenidos);
     }
+
     @Test
     public void testCambioDeCanalDe1a2() {
         // Arrange
